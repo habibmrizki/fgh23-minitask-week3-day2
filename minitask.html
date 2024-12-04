@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      table,
+      th,
+      td {
+        border: 2px solid black;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: center;
+      }
+      caption {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      thead {
+        background-color: rgb(244, 176, 131);
+        color: #010101;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Jenjang Terakhir Pendidikan Karyawan
+      </caption>
+      <colgroup>
+        <col style="background-color: white" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th rowspan="2" scope="colgroup">Bagian</th>
+          <th colspan="3" scope="colgroup">Laki-Laki</th>
+          <th colspan="3" scope="colgroup">Perempuan</th>
+        </tr>
+        <tr>
+          <th scope="col">SMA</th>
+          <th scope="col">D-1/D-II/D-III</th>
+          <th scope="col">S1/S2/S3</th>
+          <th scope="col">SMA</th>
+          <th scope="col">D-1/D-II/D-III</th>
+          <th scope="col">S1/S2/S3</th>
+        </tr>
+        <tr>
+          <th>(1)</th>
+          <th>(2)</th>
+          <th>(3)</th>
+          <th>(4)</th>
+          <th>(5)</th>
+          <th>(6)</th>
+          <th>(7)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Keuangan</th>
+          <td>2</td>
+          <td>11</td>
+          <td>7</td>
+          <td>3</td>
+          <td>10</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <th scope="row">Pemasaran</th>
+          <td>4</td>
+          <td>7</td>
+          <td>12</td>
+          <td>1</td>
+          <td>5</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <th scope="row">Administrasi</th>
+          <td>9</td>
+          <td>5</td>
+          <td>1</td>
+          <td>1</td>
+          <td>3</td>
+          <td>12</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Jumlah</th>
+          <td>15</td>
+          <td>23</td>
+          <td>20</td>
+          <td>5</td>
+          <td>18</td>
+          <td>34</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

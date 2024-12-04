@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <caption>
+        table jumlah siswa masing-masing kelas
+      </caption>
+      <!-- power emmed -->
+      <!-- tr*5 -->
+      <!-- <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr> -->
+      <!-- (tr>th*2)+(tr>(td*2))*4 -->
+      <tr>
+        <th style="border-style: solid">kelas</th>
+        <th style="border-style: solid">jumlah siswa</th>
+      </tr>
+      <tr>
+        <td style="border-style: solid">1</td>
+        <td style="border-style: solid">33</td>
+      </tr>
+      <tr>
+        <td style="border-style: solid">2</td>
+        <td style="border-style: solid">33</td>
+      </tr>
+      <tr>
+        <td style="border-style: solid">3</td>
+        <td style="border-style: solid">33</td>
+      </tr>
+      <tr>
+        <td style="border-style: solid">4</td>
+        <td style="border-style: solid">55</td>
+      </tr>
+      <!-- tablle dengan 6 baris dan 6 kolom baris 1 dan baris 2 berisikan heading baris 3 - 6 , kolo, 1 merupakam heading -->
+      <!-- tr>th*3
+       tr>th*4
+       (tr>(th+(td*5)))*4
+       (tr>th*3)+(tr>th*4)+(tr>(th+(td*5)))*4
+       -->
+    </table>
+    <table
+      style="
+        border-style: solid;
+        border-collapse: collapse;
+        background-color: white;
+      "
+    >
+      <caption>
+        table jumlah siswa 2024
+      </caption>
+      <colgroup>
+        <col style="border: 2px solid black; background-color: lightblue" />
+        <col span="4" />
+        <col style="border: 2px solid black" />
+      </colgroup>
+      <thead style="background-color: black; color: white">
+        <tr>
+          <th rowspan="2" scope="colgroup">Jurusan</th>
+          <th colspan="4" scope="colgroup">Semester</th>
+          <th rowspan="2" scope="col">Jumlah</th>
+        </tr>
+        <tr>
+          <th scope="col">I</th>
+          <th scope="col">II</th>
+          <th scope="col">III</th>
+          <th scope="col">IV</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr>
+          <th scope="row">Ekonomi</th>
+          <td>100</td>
+          <td>90</td>
+          <td>120</td>
+          <td>80</td>
+          <td>390</td>
+        </tr>
+        <tr>
+          <th scope="row">Hukum</th>
+          <td>100</td>
+          <td>80</td>
+          <td>120</td>
+          <td>80</td>
+          <td>360</td>
+        </tr>
+        <tr>
+          <th scope="row">Teknik</th>
+          <td>75</td>
+          <td>110</td>
+          <td>100</td>
+          <td>60</td>
+          <td>346</td>
+        </tr>
+      </tbody>
+      <tfoot style="background-color: grey; color: white">
+        <tr>
+          <th scope="row">Jumlah</th>
+          <td>275</td>
+          <td>280</td>
+          <td>330</td>
+          <td>210</td>
+          <td>1095</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
